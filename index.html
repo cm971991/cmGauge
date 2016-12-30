@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gaugeDemo</title>
+    <link rel="stylesheet" href="css/cmGauge.css">
+</head>
+<body>
+<div id="gaugeDemo" class="gauge gauge-big gauge-green">
+    <div class="gauge-arrow" data-percentage="40"
+         style="transform: rotate(0deg);"></div>
+</div>
+
+<div style="margin-top: 20px;">
+    <button>点击更新仪表盘数据</button>
+</div>
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/cmGauge.js"></script>
+<script type="text/javascript">
+	$(function () {
+		$("button").click(function () {
+			var randomNum = Math.floor((Math.random() * 100));
+			$('#gaugeDemo .gauge-arrow').trigger('updateGauge', randomNum);
+		});
+
+		$('#gaugeDemo .gauge-arrow').cmGauge();
+	});
+</script>
+</body>
+</html>
