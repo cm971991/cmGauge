@@ -3,13 +3,11 @@
 
 ## 使用方法
 <br>
-```html
-        <div>
-          <div class="gauge-arrow" data-percentage="40" style="transform: rotate(0deg);"></div>
-        </div>
-```       
-```javascript 
-        $('.gauge-arrow').cmGauge();
+### html结构
+        `<div><div class="gauge-arrow" data-percentage="40" style="transform: rotate(0deg);"></div></div>`
+       
+### js调用方法
+        `$('.gauge-arrow').cmGauge();`
           
-``` 
-### 详细请看index.html
+### 详细请看
+        index.html
