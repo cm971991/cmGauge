@@ -1,14 +1,12 @@
 # cmGauge
-仪表盘插件
+## 基于juqery实现的仪表盘插件
 
-#使用方法
- HTML结构
-        <div>
-          <div class="gauge-arrow" data-percentage="40" style="transform: rotate(0deg);"></div>
-        </div>
-        
- 插件调用
-        	$('.gauge-arrow').cmGauge();
+## 使用方法
+### html结构
+        `<div><div class="gauge-arrow" data-percentage="40" style="transform: rotate(0deg);"></div></div>`
+       
+### js调用方法
+        `$('.gauge-arrow').cmGauge();`
           
- 
- 详细请看index.html
+### 详细请看
+        index.html
