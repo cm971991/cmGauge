@@ -93,3 +93,7 @@
 .gauge-green.gauge:before {
     border-color: #8ceab9;
 }
+
+gauge-blue.gauge:before {
+    border-color: #2bc5ea;
+}
